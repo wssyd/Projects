@@ -1,0 +1,8 @@
+<resources>
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">88dp</dimen>
+    <!-- Margin to the left of the text layout in  the list -->
+    <dimen name="text_layout_left_margin">16dp</dimen>
+
+    <dimen name="category_text_size">32sp</dimen>
+</resources>
