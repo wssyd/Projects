@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/very_light_margin">
+
+        <RelativeLayout
+            android:id="@+id/basketball_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/heavy_margin"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/basketball_linear_layout_1"
+                    style="@style/LayoutStyle"
+                    android:layout_marginLeft="@dimen/heavy_margin"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/text_view_1"
+                        style="@style/TeamNameStyle"
+                        android:fontFamily="sans-serif-medium"
+                        android:hint="@string/team_A_title"
+                        android:inputType="textCapCharacters" />
+
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        style="@style/ScoreDisplay"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="0" />
+
+                    <Button
+                        android:id="@+id/team_a_increment_by_3"
+                        style="@style/ButtonStyle"
+                        android:text="@string/increment_by_3" />
+
+
+                    <Button
+                        android:id="@+id/team_a_increment_by_2"
+                        style="@style/ButtonStyle"
+                        android:text="@string/increment_by_2" />
+
+                    <Button
+                        android:id="@+id/team_a_free_throw"
+                        style="@style/ButtonStyle"
+                        android:text="@string/increment_by_1" />
+
+                    <Button
+                        android:id="@+id/team_a_undo"
+                        style="@style/ButtonStyle"
+                        android:text="@string/undo" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/heavy_margin"
+                    android:layout_marginRight="@dimen/heavy_margin"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/basketball_linear_layout_2"
+                    style="@style/LayoutStyle"
+                    android:layout_marginRight="@dimen/heavy_margin"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/text_view_2"
+                        style="@style/TeamNameStyle"
+                        android:fontFamily="sans-serif-medium"
+                        android:hint="@string/team_B_title"
+                        android:inputType="textCapCharacters" />
+
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        style="@style/ScoreDisplay"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="0" />
+
+                    <Button
+                        android:id="@+id/team_b_increment_by_3"
+                        style="@style/ButtonStyle"
+                        android:text="@string/increment_by_3" />
+
+                    <Button
+                        android:id="@+id/team_b_increment_by_2"
+                        style="@style/ButtonStyle"
+                        android:text="@string/increment_by_2" />
+
+                    <Button
+                        android:id="@+id/team_b_free_throw"
+                        style="@style/ButtonStyle"
+                        android:text="@string/increment_by_1" />
+
+                    <Button
+                        android:id="@+id/team_b_undo"
+                        style="@style/ButtonStyle"
+                        android:text="@string/undo" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/BigButtonStyle"
+            android:layout_below="@id/basketball_relative_layout"
+            android:background="@color/colorPrimary"
+            android:hint="@string/reset" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

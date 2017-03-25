@@ -1,0 +1,132 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <!-- Small Button style-->
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <!--Big Button style-->
+    <style name="BigButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SmallButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="IncrementButtonStyle">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="MediumButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:layout_weight">2</item>
+
+    </style>
+
+
+
+    <style name="SnookerPointers">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+
+    <!-- Layout style-->
+    <style name="LayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Team name style-->
+    <style name="TeamNameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/very_light_margin</item>
+        <item name="android:layout_marginTop">@dimen/very_light_margin</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <!-- Score display style-->
+    <style name="ScoreDisplay">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/light_margin</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="AboutTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">@dimen/light_margin</item>
+        <item name="android:textColor">@android:color/secondary_text_dark_nodisable</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="MainLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MainLayoutTexts">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:paddingLeft">@dimen/very_light_margin</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MainLayoutImages">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="MainLayoutLines">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+</resources>

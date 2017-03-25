@@ -1,0 +1,296 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/very_light_margin">
+
+        <RelativeLayout
+            android:id="@+id/cricket_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/very_light_margin"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/cricket_linear_layout_1"
+                    style="@style/LayoutStyle"
+                    android:layout_marginLeft="@dimen/light_margin"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/cricket_text_view_1"
+                        style="@style/TeamNameStyle"
+                        android:fontFamily="sans-serif-medium"
+                        android:hint="@string/team_A_title"
+                        android:inputType="textCapCharacters" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cricket_team_a_score"
+                            style="@style/ScoreDisplay"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="0" />
+
+                        <TextView
+                            style="@style/ScoreDisplay"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="/"/>
+
+                        <TextView
+                            android:id="@+id/cricket_team_a_wicket_score"
+                            style="@style/ScoreDisplay"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cricket_team_a_overs"
+                            style="@style/ScoreDisplay"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="0"
+                            android:layout_marginLeft="@dimen/very_light_margin"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/team_a_increment"
+                                style="@style/IncrementButtonStyle"/>
+
+                            <Button
+                                android:id="@+id/team_a_decrement"
+                                style="@style/IncrementButtonStyle"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cricket_team_a_increment_by_6"
+                            style="@style/MediumButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/cricket_team_a_increment_by_4"
+                            style="@style/SmallButtonStyle"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cricket_team_a_increment_by_1"
+                            style="@style/SmallButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/cricket_team_a_undo"
+                            style="@style/MediumButtonStyle"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cricket_team_a_wicket_inc"
+                            style="@style/MediumButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/cricket_team_a_wicket_dec"
+                            style="@style/SmallButtonStyle"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/very_light_margin"
+                    android:layout_marginRight="@dimen/very_light_margin"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/cricket_linear_layout_2"
+                    style="@style/LayoutStyle"
+                    android:layout_marginRight="@dimen/heavy_margin"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/cricket_text_view_2"
+                        style="@style/TeamNameStyle"
+                        android:fontFamily="sans-serif-medium"
+                        android:hint="@string/team_B_title"
+                        android:inputType="textCapCharacters" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cricket_team_b_score"
+                            style="@style/ScoreDisplay"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:hint="0"
+                            android:fontFamily="sans-serif-light"/>
+
+                        <TextView
+                            style="@style/ScoreDisplay"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="/"/>
+
+                        <TextView
+                            android:id="@+id/cricket_team_b_wicket_score"
+                            style="@style/ScoreDisplay"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:hint="0"
+                            android:fontFamily="sans-serif-light" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cricket_team_b_overs"
+                            style="@style/ScoreDisplay"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_marginLeft="@dimen/very_light_margin"
+                            android:hint="0"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/team_b_increment"
+                                style="@style/IncrementButtonStyle"/>
+
+                            <Button
+                                android:id="@+id/team_b_decrement"
+                                style="@style/IncrementButtonStyle"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cricket_team_b_increment_by_6"
+                            style="@style/MediumButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/cricket_team_b_increment_by_4"
+                            style="@style/SmallButtonStyle"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cricket_team_b_increment_by_1"
+                            style="@style/SmallButtonStyle" />
+
+                        <Button
+                            android:id="@+id/cricket_team_b_undo"
+                            style="@style/MediumButtonStyle"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cricket_team_b_wicket_inc"
+                            style="@style/MediumButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/cricket_team_b_wicket_dec"
+                            style="@style/SmallButtonStyle"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/cricket_reset"
+            style="@style/BigButtonStyle"
+            android:layout_below="@id/cricket_relative_layout"
+            android:background="@color/colorPrimary" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

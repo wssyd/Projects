@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Names of all the strings used througout the application-->
+    <string name="app_name">ScoreDroid</string>
+
+    <string name="team_A_title">Team A</string>
+
+    <string name="team_B_title">Team B</string>
+
+    <string name="increment_by_3">+3</string>
+
+    <string name="increment_by_2">+2</string>
+
+    <string name="increment_by_1">Free Throw</string>
+
+    <string name="undo">undo</string>
+
+    <string name="basketball">BASKETBALL</string>
+
+    <string name="cricket">CRICKET</string>
+
+    <string name="snooker">SNOOKER</string>
+
+    <string name="reset">reset</string>
+
+    <string name="about_name">ABOUT</string>
+
+</resources>
+
+
+
+
+

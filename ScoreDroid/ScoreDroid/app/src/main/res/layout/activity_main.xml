@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/very_light_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/basketball_layout"
+        style="@style/MainLinearLayoutStyle"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/basketball_textview"
+            style="@style/MainLayoutTexts"
+            android:fontFamily="cursive"/>
+
+        <ImageView
+            android:id="@+id/basketball_imageView"
+            style="@style/MainLayoutImages"
+            android:src="@drawable/basketball" />
+
+
+    </LinearLayout>
+
+    <View style="@style/MainLayoutLines" />
+
+    <LinearLayout
+        android:id="@+id/cricket_layout"
+        style="@style/MainLinearLayoutStyle"
+        android:background="@android:color/holo_green_dark">
+
+        <TextView
+            android:id="@+id/cricket_textview"
+            style="@style/MainLayoutTexts"
+            android:fontFamily="cursive"/>
+
+
+        <ImageView
+            android:id="@+id/cricket_imageView"
+            style="@style/MainLayoutImages"
+            android:src="@drawable/cricket" />
+    </LinearLayout>
+
+    <View style="@style/MainLayoutLines" />
+
+    <LinearLayout
+        android:id="@+id/snooker_layout"
+        style="@style/MainLinearLayoutStyle"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/snooker_textview"
+            style="@style/MainLayoutTexts"
+            android:fontFamily="cursive" />
+
+
+        <ImageView
+            android:id="@+id/snooker_imageView"
+            style="@style/MainLayoutImages"
+            android:src="@drawable/snooker" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/about"
+        style="@style/AboutTextView"
+        android:hint="@string/about_name" />
+
+</LinearLayout>
