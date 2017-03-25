@@ -1,0 +1,12 @@
+To start orbd on port 1050:
+
+	start orbd -ORBInitialPort 1050 -ORBInitialHost localhost
+
+Now Run the CalcyServer first:
+
+	java CalcServer -ORBInitialPort 1050 -ORBInitialHost localhost
+
+
+Now run the CalcClient
+
+	java CalcClient -ORBInitialPort 1050 -ORBInitialHost localhost
